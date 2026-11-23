@@ -1,0 +1,165 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f8f6;
+    color: #24352d;
+    line-height: 1.6;
+}
+
+header {
+    background: #176b50;
+    color: white;
+    padding: 22px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    background: linear-gradient(135deg, #176b50, #39a87c);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 650px;
+    margin: 0 auto 30px;
+}
+
+.boton, button {
+    display: inline-block;
+    background: #176b50;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.hero .boton {
+    background: white;
+    color: #176b50;
+}
+
+.boton:hover, button:hover {
+    opacity: 0.85;
+}
+
+.servicios, .servicio {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+.servicios h2 {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.contenedor-servicios, .planes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.tarjeta, .planes article {
+    background: white;
+    padding: 35px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px #00000012;
+}
+
+.tarjeta {
+    text-align: center;
+}
+
+.tarjeta h3, .tarjeta p {
+    margin-bottom: 18px;
+}
+
+.icono-servicio {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.servicio h2, .servicio h3 {
+    margin-bottom: 18px;
+}
+
+.servicio h3 {
+    margin-top: 30px;
+}
+
+.servicio ul {
+    padding-left: 25px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 500px;
+}
+
+input, select, textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+footer {
+    background: #123d30;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+@media (max-width: 650px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .contenedor-servicios, .planes {
+        grid-template-columns: 1fr;
+    }
+}
