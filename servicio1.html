@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrenamiento Personal | VidaPlus</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>VidaPlus</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="servicio1.html">Entrenamiento</a>
+            <a href="servicio2.html">Nutrición</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="servicio">
+            <h2>Entrenamiento Personal</h2>
+            <p>
+                Transformá tu estilo de vida con nuestros
+                programas de entrenamiento personalizados.
+            </p>
+
+            <h3>¿Qué ofrecemos?</h3>
+            <ul>
+                <li>Rutinas personalizadas según tus objetivos.</li>
+                <li>Entrenamiento de fuerza y resistencia.</li>
+                <li>Planes para principiantes y avanzados.</li>
+                <li>Seguimiento de tu progreso físico.</li>
+                <li>Asesoramiento sobre hábitos saludables.</li>
+            </ul>
+
+            <h3>Nuestros planes</h3>
+
+            <div class="planes">
+                <article>
+                    <h4>Plan Básico</h4>
+                    <p>2 sesiones por semana.</p>
+                    <p>Precio: 150 Bs/mes</p>
+                </article>
+
+                <article>
+                    <h4>Plan Premium</h4>
+                    <p>4 sesiones por semana.</p>
+                    <p>Precio: 280 Bs/mes</p>
+                </article>
+            </div>
+
+            <h3>Solicitá información</h3>
+
+            <form id="formEntrenamiento">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required>
+
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" required>
+
+                <label for="objetivo">Tu objetivo:</label>
+                <select id="objetivo">
+                    <option>Ganar masa muscular</option>
+                    <option>Mejorar condición física</option>
+                    <option>Mejorar resistencia</option>
+                </select>
+
+                <button type="submit">Enviar solicitud</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 VidaPlus - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById("formEntrenamiento")
+            .addEventListener("submit", function(event) {
+                event.preventDefault();
+                alert("¡Solicitud recibida! Gracias por tu interés.");
+                this.reset();
+            });
+    </script>
+
+</body>
+</html>
