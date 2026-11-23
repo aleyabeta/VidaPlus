@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asesoramiento Nutricional | VidaPlus</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>VidaPlus</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="servicio1.html">Entrenamiento</a>
+            <a href="servicio2.html">Nutrición</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="servicio">
+            <h2>Asesoramiento Nutricional</h2>
+            <p>
+                Mejorá tus hábitos alimenticios con orientación
+                personalizada para mantener una dieta equilibrada
+                y sostenible.
+            </p>
+
+            <h3>¿Qué ofrecemos?</h3>
+            <ul>
+                <li>Evaluación inicial de tus hábitos y objetivos.</li>
+                <li>Planes de alimentación equilibrados y personalizados.</li>
+                <li>Ideas para organizar tus comidas semanales.</li>
+                <li>Recomendaciones según tu nivel de actividad física.</li>
+                <li>Seguimiento de tu progreso y ajuste del plan.</li>
+            </ul>
+
+            <h3>Nuestros planes</h3>
+
+            <div class="planes">
+                <article>
+                    <h4>Plan Básico</h4>
+                    <p>1 consulta mensual y plan alimenticio.</p>
+                    <p>Precio: 120 Bs/mes</p>
+                </article>
+
+                <article>
+                    <h4>Plan Premium</h4>
+                    <p>3 consultas mensuales, plan y seguimiento semanal.</p>
+                    <p>Precio: 250 Bs/mes</p>
+                </article>
+            </div>
+
+            <h3>Solicitá información</h3>
+
+            <form id="formNutricion">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required>
+
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" required>
+
+                <label for="objetivo">Tu objetivo:</label>
+                <select id="objetivo">
+                    <option>Mejorar mis hábitos alimenticios</option>
+                    <option>Bajar de peso</option>
+                    <option>Ganar masa muscular</option>
+                    <option>Mantener una dieta equilibrada</option>
+                </select>
+
+                <label for="consulta">Consulta (opcional):</label>
+                <textarea id="consulta" rows="4"></textarea>
+
+                <button type="submit">Enviar solicitud</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 VidaPlus - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById("formNutricion")
+            .addEventListener("submit", function(event) {
+                event.preventDefault();
+                alert("¡Solicitud recibida! Gracias por tu interés.");
+                this.reset();
+            });
+    </script>
+
+</body>
+</html>
